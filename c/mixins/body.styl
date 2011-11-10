@@ -1,0 +1,35 @@
+global-reset()
+
+// colors
+
+txt = #333
+dim = #999
+
+bg1 = #fff
+bg2 = #ddd
+
+lhue = 203
+link = hsl(lhue,95,47)
+hover = hsl(lhue,95,35)
+
+// typography
+
+x = 14px
+df()
+  s x
+  lh 1.5
+  ff sans
+  c txt
+
+anchor()
+  c link
+  td none
+  &:hover, &:focus
+    c hover
+a
+  anchor()
+
+body
+  df()
+  bg bg1
+  oy scroll
