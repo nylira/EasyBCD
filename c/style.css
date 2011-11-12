@@ -11,6 +11,8 @@ table{border-collapse:separate;border-spacing:0;vertical-align:middle}
 caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
 a img{border:none}
 li,p{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+strong{font-weight:bold}
+em{font-style:italic}
 a{color:#0692ea;text-decoration:none;}
 a:hover,a:focus{color:#046dae}
 body{font-size:14px;line-height:1.5;font-family:'Helvetica Neue',Arial,Helvetica,sans-serif;color:#333;background:#f2f2f2;overflow-y:scroll;background:#26333b}
