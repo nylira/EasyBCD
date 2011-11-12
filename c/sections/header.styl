@@ -1,17 +1,28 @@
 header.site
-  bb 1px solid bg2
-  background linear-gradient(top, m255, m249 50%, m241 50%, m254 100%)
-  box-shadow b7 0 0 3em
+  bb 1px solid w7
+  background linear-gradient(top, hsl(hue1,21,21), hsl(hue1,21,19) 50%, hsl(hue1,21,16), hsl(hue1,21,21))
+  box-shadow b75 0 0 10em
+  mb 2em
   nav
     cnt()
+    bx 1px solid w7
     ul
       clearfix()
       li
         col 2
+        w cw*2 - 1px
+        br 1px solid b40
         &.branding
           col 4
+          w cw*4 - 2px
+          bl 1px solid b40
         a
           d block
           lh 3em
           p 0 1em
           fw bold
+          c txt
+          text-shadow #000 0 1px 0
+          bx 1px solid w7
+          c #ccc
+          aa()

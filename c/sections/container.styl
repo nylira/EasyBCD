@@ -1,22 +1,78 @@
 #container
   cnt()
-  p 6em 0
+  w 962px
+  bg #fff
+  bt 1px solid #e5e5e5
+  bs 1px solid #dbdbdb
+  bb 1px solid #d2d2d2
+  box-shadow b30 0 1px 3px
+  border-radius 5px
+  mb x*3
 
-  .body
-    pl cw*4
-
-    h1, h2, h3, p, ol, ol, blockquote, form
-      mb x*1.5
-
-    h1
-      f 3em/1.5 sans
-
-    h2
-      f 2em/1.5 sans
-
-    h3
-      f 1.5em/1.5 sans
+  a.cta-button
+    d block
+    fl()
+    w cw*3
+    mr x
+    p .75em 1em
+    border-radius 5px
+    border 1px solid #ddd
+    background linear-gradient(top, #fff, m240)
+    c txt
+    cursor pointer
+    p
+      &.title
+        .name
+          f bold 1.5em/1.5 sans
+        .version
+          f 85% sans
+    
   section
+    clearfix()
+    p 3em 0
+    bb 1px solid #ddd
+
+    header
+      mb x*3
+      p 0 cw
+      h2
+        f 1.5em/1.5 sans
+        c #000
+
+    .content
+      p 0 cw
+
+    &.intro
+      p 4.5em 0 3em
+      bg hsl(hue1,40,50)
+      h1
+        f 3em/1 sans
+        ls -2px
+        mb x*3
+
+      .cta
+        w cw*3
+        m 0 auto
+        ta center
+        a.cta-button
+          mb x*.5
+          ta left
+        a.free
+          c txt
+          s 75%
+          &:hover
+            c link
+            td underline
+
+    &.benefits
+      .content
+        ul
+          clearfix()
+          list-style square
+          li
+            p x*.75 x
+            bb 1px solid #eee
+            col 5
     &.awards
       ul
         d block
