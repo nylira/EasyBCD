@@ -16,13 +16,24 @@ header.site
           col 4
           w cw*4 - 2px
           bl 1px solid b40
+          a
+            ta left
         a
           d block
           lh 3em
           p 0 1em
           fw bold
           c txt
-          text-shadow #000 0 1px 0
+          text-shadow #000 0 1px 0, b25 0 0 1em
           bx 1px solid w7
-          c #ccc
+          c #ddd
           aa()
+          ta center
+          &:hover
+            c #fff
+            background linear-gradient(top, hsl(hue1,21,21 + 3), hsl(hue1,21,19 + 3) 50%, hsl(hue1,21,16 + 3), hsl(hue1,21,21 + 3))
+          &:active
+            background linear-gradient(top, m15, m30)
+            c #888
+            text-shadow w10 0 -1px 0
+            box-shadow inset b50 0 0 .5em
