@@ -1,6 +1,6 @@
 header.site
   bb 1px solid w7
-  background linear-gradient(top, hsl(hue1,21,21), hsl(hue1,21,19) 50%, hsl(hue1,21,16), hsl(hue1,21,21))
+  header-site-bg()
   box-shadow b75 0 0 10em
   mb 2em
   nav
@@ -29,9 +29,9 @@ header.site
           ta center
           &:hover
             c #fff
-            background linear-gradient(top, hsl(hue1,21,21 + 3), hsl(hue1,21,19 + 3) 50%, hsl(hue1,21,16 + 3), hsl(hue1,21,21 + 3))
+            header-site-a-hover()
           &:active
-            background linear-gradient(top, m15, m30)
+            header-site-a-active()
             c #888
             text-shadow w10 0 -1px 0
             box-shadow inset b50 0 0 .5em

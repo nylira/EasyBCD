@@ -20,7 +20,6 @@
     fl()
     ta center
     border-radius 3px
-    background linear-gradient(top, m250, m230)
     fw bold
     lh x*3
     tt uppercase
@@ -28,17 +27,18 @@
     text-shadow #fff 0 1px 0
     cursor pointer
     box-shadow inset #fff 0 1px 0
+    button-bg()
     &:hover
-      background linear-gradient(top, m240, m200)
+      button-bg-hover()
     &:active
-      background linear-gradient(top, m220, m180)
+      button-bg-active()
       box-shadow inset b35 0 0 .5em
     
   section
     clearfix()
     p 3em 0
     bb 1px solid hsl(lhue,25,85)
-    background linear-gradient(top, hsla(lhue,25,60,.1), hsla(lhue,0,100,.1) 75px)
+    section-bg()
 
     header
       mb x*3
@@ -56,7 +56,7 @@
     &.intro
       border-radius 3px 3px 0 0
       p 0
-      background linear-gradient(top, hsl(hue1,55,23), hsl(hue1,60,37))
+      intro-bg()
       c #fff
       aa()
       relative()
@@ -163,7 +163,7 @@
           clearfix()
           li.solution
             fl()
-            w 33.3333333%
+            w 32%
             p 0 1em
             box-sizing border-box
 
@@ -180,7 +180,7 @@
                 border-radius 4px 4px 0 0
                 bt 1px solid hsl(lhue,30,95)
                 bb 1px solid hsl(lhue,30,75)
-                background linear-gradient(top, hsl(lhue,35,90), hsl(lhue,35,80))
+                data-bg()
                 relative()
                 c hsl(lhue,45,30)
                 aa()
@@ -200,6 +200,22 @@
                 w cw*2
                 m 0 auto
                 b 1px solid hsl(lhue,25,85)
+
+            &.commercial
+              w 36%
+              relative()
+              mt -3px
+              .data
+                b 3px solid  hsl(lhue,25,60)
+                box-shadow hsl(lhue,25,80) 0 0 1em
+                a.cta-button
+                  commercial-cta-bg()
+                  bt none
+                  c hsl(hue1,25,93)
+                  aa()
+                  text-shadow b30 0 1px 0
+                
+                
     &.downloads
       bb none
       pb 0
