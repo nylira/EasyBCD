@@ -6,13 +6,7 @@
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
   <link rel="stylesheet" media="print" href="c/print.css?v=1">
-  <script src="j/jquery.min.js"></script>
-  <script src="j/jquery-ui.min.js"></script>
-  <script src="j/modernizr-latest.js"></script>
-  <script src="j/underscore-min.js"></script>
-  <script src="j/backbone-min.js"></script>
-  <script src="j/jquery.cycle.all.js"></script>
-  <script src="j/script.js"></script>
+  <link rel="icon" href="i/favicon.png">
 </head>
 
 <body>
@@ -30,7 +24,12 @@
 
 <header class="subheader">
   <nav>
-    <div class="product"><a href="/">EasyBCD</a></div>
+    <div class="product">
+      <a href="/">
+        <img class="icon" src="i/favicon.png"</a>
+        <div class="name">EasyBCD</div>
+      </a>
+    </div>
     <ul>
       <li><a href="#">Older Versions</a>
       <li><a href="#">Changelog</a>
@@ -46,8 +45,8 @@
       <h1>Take control of your boot loader.</h1>
     </header>
     <div class="content">
-      <p class="intro">EasyBCD extends the Windows 7 <span class="amp">&amp;</span> Vista bootloader, allowing you to dual-boot to your heart&rsquo;s content.</p>
-      <div class="img">Image</div>
+      <p class="intro">EasyBCD supercharges your Windows PC, allowing you to dual-boot to your heart's content.</p>
+      <a id="app-preview" href="i/window-full.png"><img alt="EasyBCD application" src="i/window.png" width="320" height="320"></a>
     </div>
     <footer>
       <a class="cta-button" href="#">Buy Now</a>
@@ -58,12 +57,11 @@
   <section class="awards">
     <div class="content">
       <ul>
-        <li><a href="//j.mp/a591cC"><img src="i/awards/pcmagazine.png"></a>
-        <li><a href="//download.cnet.com/EasyBCD/3000-2094_4-10556865.html"><img src="i/awards/cnet.png"></a>
-        <li><a href="//pcworld.com"><img src="i/awards/pcworld.png">
-        <li><a href="//apcmag.com/node/5162/"><img src="i/awards/ninemsn.png"></a>
-        <li><a href="//softpedia.com/get/System/OS-Enhancements/EasyBCD.shtml"><img src="i/awards/softpedia.png"/></a>
-        <li><a href="//softpedia.com/get/System/OS-Enhancements/EasyBCD.shtml"><img src="i/awards/softpedia-clean.png"></a>
+        <li class="pcmagazine"><img src="i/awards/pcmagazine.png">
+        <li class="cnet"><img src="i/awards/cnet.png">
+        <li class="pcworld"><img src="i/awards/pcworld.png">
+        <li class="ninemsn"><img src="i/awards/ninemsn.png">
+        <li class="softpedia"><img src="i/awards/softpedia.png">
       </ul>
     </ul>
   </section>
@@ -102,7 +100,7 @@
     </header>
     <div class="content">
       <ul class="os">
-        <li class="win"><img src="i/os/windows.png" alt="Windows 7, Windows Vista, Windows XP, Windows 2003" title="Windows 7, Windows Vista, Windows XP, Windows 2003">
+        <li class="win"><img src="i/os/win.png" alt="Windows 7, Windows Vista, Windows XP, Windows 2003" title="Windows 7, Windows Vista, Windows XP, Windows 2003">
         <li class="osx"><img src="i/os/apple.png" alt="Mac OS X" title="Mac OS X">
         <li class="linux"><img src="i/os/linux.png" alt="Linux" title="Linux">
         <li class="bsd"><img src="i/os/bsd.png" alt="BSD" title="BSD">
@@ -162,6 +160,7 @@
   <nav>
     <ul>
       <li class="copyright">&copy; 2011 <a href="/">NeoSmart Technlogies </a>
+      <li><a href="#">About</a>
       <li><a href="#">Privacy</a>
       <li><a href="#">Contact</a>
       <li><a href="#">Help</a>
@@ -171,3 +170,8 @@
     </ul>
   </nav>
 </footer>
+
+<script src="j/jquery.min.js"></script>
+<script src="j/fancyzoom.min.js"></script>
+<script src="j/modernizr-latest.js"></script>
+<script src="j/script.js"></script>
