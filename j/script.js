@@ -1,1 +1,3 @@
-$('#app-preview').fancyZoom();
+$('#app-preview').fancyZoom({
+  closeOnClick: true,
+});
