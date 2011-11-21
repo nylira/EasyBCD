@@ -33,12 +33,24 @@
     &:active
       button-bg-active()
       box-shadow inset b35 0 0 .5em
+
+  ul.social
+    bxs()
+    absolute left 480px bottom 1.25em
+    clearfix()
+    clear both
+    pr cw - 24px
+    w 480px
+    h 26px
+    li
+      float right
     
   .section
     clearfix()
     p 3em 0
     bb 1px solid hsl(lhue,25,85)
     section-bg()
+    relative()
 
     .header
       mb x*3
@@ -86,7 +98,7 @@
         a#app-preview
           d block
           img
-            absolute top 29px right 0
+            absolute top 30px right 0
             d block
       .footer
         clearfix()
@@ -95,24 +107,9 @@
         p 1.5em cw
 
         a.cta-button
-          w cw*2
+          w 200px - x*.75
           fl()
           mr 1.5em
-
-    &.awards
-      bg #fff
-      ul
-        d block
-        m 0 -2em
-        li
-          fl()
-          p 0 1.6em
-          img
-            max-height 60px
-          &.cnet img
-            max-height 80px
-            mt -10px
-
 
     &.support
       ul.os
@@ -134,6 +131,7 @@
         bg hsl(lhue,50,95)
 
     &.benefits
+      pb 1.5em
       .content
         p 0 cw - x
         ul
@@ -156,6 +154,7 @@
 
 
     &.comparison
+      pb 4.5em
       .content
         p 0 cw - x
 
@@ -218,7 +217,20 @@
                     commercial-cta-hover()
                     c #fff
                 
-                
-    &.downloads
+    &.awards
       bb none
-      pb 0
+      border-radius 0 0 5px 5px
+      .header
+        pb 1.5em
+      .content
+        ul
+          d block
+          m 0 -2em
+          li
+            fl()
+            p 0 1.6em
+            img
+              max-height 60px
+            &.cnet img
+              max-height 80px
+              mt -10px

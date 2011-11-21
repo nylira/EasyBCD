@@ -2,3 +2,39 @@
 @import 'subheader'
 @import 'footer'
 @import 'container'
+
+.popup
+  fixed()
+  top 0
+  right 0
+  bottom 0
+  left 0
+  bg b60
+  opacity 0
+  transition 500ms ease-in-out opacity
+  z -100
+
+  &:after
+    content 'Preview'
+    f 1.5em/50px sans
+    ta center
+    c #fff
+    d block
+    w 300px
+    h 50px
+    absolute top 50% left 50%
+    m -295px 0 0 -150px
+  img
+    d block
+    w 583px
+    h 488px
+    absolute top 50% left 50%
+    m -244px 0 0 -291px
+    box-shadow b75 0 0 2em
+    opacity 0
+
+  &.visible
+    opacity 1
+    z 100
+    img
+      opacity 1

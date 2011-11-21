@@ -44,7 +44,7 @@
     <div class="header"><h1>Take control of your boot loader.</h1></div>
     <div class="content">
       <p class="intro">EasyBCD supercharges your Windows PC, allowing you to dual-boot to your heart's content.</p>
-      <a id="app-preview" href="#window-full"><img alt="EasyBCD application" src="i/window.png" width="320" height="320"></a>
+      <a id="app-preview"><img alt="EasyBCD application" src="i/window.png" width="320" height="320"></a>
     </div>
     <div class="footer">
       <a class="cta-button" href="#">Buy Now</a>
@@ -52,17 +52,24 @@
     </div>
   </div>
 
-  <div class="section awards">
+  <div class="section support">
+    <div class="header"><h2>Dual-boot with anything you could want.</h2></div>
     <div class="content">
-      <ul>
-        <li class="pcmagazine"><img alt="PC Magazine Editor's Choice" src="i/awards/pcmagazine.png">
-        <li class="cnet"><img alt="CNET 5 stars" src="i/awards/cnet.png">
-        <li class="pcworld"><img alt="PCWorld Fantastic Freebie" src="i/awards/pcworld.png">
-        <li class="ninemsn"><img alt="Nine MSN" src="i/awards/ninemsn.png">
-        <li class="softpedia"><img alt="Softpedia 5 star pick" src="i/awards/softpedia.png">
+      <ul class="os">
+        <li class="win"><img src="i/os/win.png" alt="Windows 7, Windows Vista, Windows XP, Windows 2003" title="Windows 7, Windows Vista, Windows XP, Windows 2003">
+        <li class="osx"><img src="i/os/apple.png" alt="Mac OS X" title="Mac OS X">
+        <li class="linux"><img src="i/os/linux.png" alt="Linux" title="Linux">
+        <li class="bsd"><img src="i/os/bsd.png" alt="BSD" title="BSD">
       </ul>
+      <p class="legacy">You may also boot into <strong>legacy systems</strong> that Microsoft no longer supports: MS-DOS, Windows 9x, Windows ME.
     </div>
-  </div>
+
+<ul class="social">
+  <li><div class="g-plusone" data-size="medium" data-href="http://neosmart.net/dl.php?id=1"></div>
+  <li class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://neosmart.net/dl.php?id=1" data-count="horizontal" data-via="neosmart">Tweet</a>
+  <li class="fb" ><div class="fb-like" data-href="http://neosmart.net/dl.php?id=1" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</ul>
+</div>
 
   <div class="section benefits">
     <div class="header"><h2>A breeze to use. Chock-full of benefits.</h2></div>
@@ -90,19 +97,6 @@
     </div>
   </div>
 
-  <div class="section support">
-    <div class="header"><h2>Dual-boot with anything you could want.</h2></div>
-    <div class="content">
-      <ul class="os">
-        <li class="win"><img src="i/os/win.png" alt="Windows 7, Windows Vista, Windows XP, Windows 2003" title="Windows 7, Windows Vista, Windows XP, Windows 2003">
-        <li class="osx"><img src="i/os/apple.png" alt="Mac OS X" title="Mac OS X">
-        <li class="linux"><img src="i/os/linux.png" alt="Linux" title="Linux">
-        <li class="bsd"><img src="i/os/bsd.png" alt="BSD" title="BSD">
-      </ul>
-      <p class="legacy">You may also boot into <strong>legacy systems</strong> that Microsoft no longer supports: MS-DOS, Windows 9x, Windows ME.
-    </div>
-  </div>
-
   <div class="section comparison" id="comparison">
     <div class="header"><h2>Select the best product for your needs.</h2></div>
     <div class="content">
@@ -111,7 +105,6 @@
           <div class="data">
             <h3>Non-commercial <span class="price">Free</span></h3>
             <ul class="features">
-              <li><strong>No</strong> documentation
               <li><strong>Limited</strong> technical support
               <li><strong>No</strong> early access to new releases
               <li><strong>Personal</strong>, non-commercial use only
@@ -140,10 +133,18 @@
       </ul>
     </div>
   </div>
-  <div class="section downloads">
+  <div class="section awards">
     <div class="header"><h2>Over <strong>25,000,000</strong> downloads to date.</h2></div>
+    <div class="content">
+      <ul>
+        <li class="pcmagazine"><img alt="PC Magazine Editor's Choice" src="i/awards/pcmagazine.png">
+        <li class="cnet"><img alt="CNET 5 stars" src="i/awards/cnet.png">
+        <li class="pcworld"><img alt="PCWorld Fantastic Freebie" src="i/awards/pcworld.png">
+        <li class="ninemsn"><img alt="Nine MSN" src="i/awards/ninemsn.png">
+        <li class="softpedia"><img alt="Softpedia 5 star pick" src="i/awards/softpedia.png">
+      </ul>
+    </div>
   </div>
-
 </div><!--container-->
 
 <div class="footer site">
@@ -162,9 +163,31 @@
   </div>
 </div>
 
-<div id="window-full" style="display:none"><img alt="EasyBCD application" src="i/window-full.png"></div>
+<div class="popup"><img alt="EasyBCD application" src="i/window-full.png"></div>
 
 <script src="j/jquery.min.js"></script>
 <script src="j/fancyzoom.min.js"></script>
 <script src="j/modernizr.min.js"></script>
 <script src="j/script.js"></script>
+
+<script type="text/javascript">
+ (function() {
+   var po = document.createElement('script'); po.type =
+'text/javascript'; po.async = true;
+   po.src = '//apis.google.com/js/plusone.js';
+   var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(po, s);
+ })();
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) {return;}
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+

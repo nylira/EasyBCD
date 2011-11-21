@@ -1,3 +1,3 @@
-$('#app-preview').fancyZoom({
-  closeOnClick: true,
+$('#app-preview, .popup').click(function() {
+  $('.popup').toggleClass('visible')
 });
