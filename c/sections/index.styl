@@ -13,6 +13,7 @@
   opacity 0
   transition 500ms ease-in-out opacity
   z -100
+  display "none\0/IE8+9"
 
   &:after
     content 'Preview'
@@ -36,5 +37,12 @@
   &.visible
     opacity 1
     z 100
+    d block
     img
       opacity 1
+
+@media not all and (-webkit-min-device-pixel-ratio:0) 
+  .popup
+    d none
+    &.visible
+      d block
