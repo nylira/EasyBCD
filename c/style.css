@@ -129,11 +129,12 @@ form ul.fields li.field input{width:320px;float:left;-webkit-box-sizing:;-moz-bo
 #container .section.awards .content ul li img{max-height:60px}
 #container .section.awards .content ul li.cnet img{max-height:80px;margin-top:-10px}
 @media not all and (-webkit-min-device-pixel-ratio:0){#container .section.intro{background:#1e4e6c !important;-webkit-box-shadow:inset rgba(38,108,151,0.50) 0 0 80px;-moz-box-shadow:inset rgba(38,108,151,0.50) 0 0 80px;box-shadow:inset rgba(38,108,151,0.50) 0 0 80px}
-}.popup{position:fixed;((null)):0;((null)):0;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.60);opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:500ms ease-in-out opacity;-moz-transition:500ms ease-in-out opacity;transition:500ms ease-in-out opacity;z-index:-100;display:"none\0/IE8+9";}
+}.popup{position:fixed;((null)):0;((null)):0;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.60);opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);-webkit-transition:500ms ease-in-out opacity;-moz-transition:500ms ease-in-out opacity;transition:500ms ease-in-out opacity;z-index:-100;}
 .popup:after{content:'Preview';font:1.5em/50px 'Helvetica Neue',Arial,Helvetica,sans-serif;text-align:center;color:#fff;display:block;width:300px;height:50px;position:absolute;top:50%;left:50%;margin:-295px 0 0 -150px}
 .popup img{display:block;width:583px;height:488px;position:absolute;top:50%;left:50%;margin:-244px 0 0 -291px;-webkit-box-shadow:rgba(0,0,0,0.75) 0 0 2em;-moz-box-shadow:rgba(0,0,0,0.75) 0 0 2em;box-shadow:rgba(0,0,0,0.75) 0 0 2em;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0)}
 .popup.visible{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);z-index:100;display:block;}
 .popup.visible img{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
 @media not all and (-webkit-min-device-pixel-ratio:0){.popup{display:none;}
 .popup.visible{display:block}
-}
+}.ie9 .popup,.ie8 .popup{display:none;}
+.ie9 .popup.visible,.ie8 .popup.visible{display:block}
